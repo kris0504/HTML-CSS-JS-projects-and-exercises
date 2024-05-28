@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        .red_border{
+            border: solid red 4px;
+            padding: 10px;
+            width: 60%;
+        }
+        #green{
+            color: green;
+            font-size: xx-large;
+            padding: 21.44px;
+        }
+        .golqm{
+            display: flex;
+            flex-direction: row;
+        }
+        .suma-class{
+            display: flex;
+            flex-direction: row;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Нашето кино</h1>
+    <p>Моля попълнете нужната информация, за да изчислим приходите</p>
+    <div class="golqm">
+
+    
+   <fieldset>
+    <legend>Вид прожекция</legend>
+        <div> <input type="radio" name="vid" id="premiera">
+        <label for="premiera">премиера</label></div>
+    <div><input type="radio" name="vid" id="normalna">
+        <label for="normalna">нормална</label></div>
+            
+    </fieldset><img src="" alt="">
+    <fieldset>
+        <legend>Начален час</legend>
+        <div>
+            <input type="radio" name="chas" id="chas10">
+        <label for="chas10">10:00</label>
+        </div>
+        <div><input type="radio" name="chas" id="chas14">
+            <label for="chas14">14:00</label></div>
+        <div>
+            <input type="radio" name="chas" id="chas18">
+        <label for="chas18">18:00</label>
+        </div>
+        <div><input type="radio" name="chas" id="chas21">
+            <label for="chas21">21:00</label>
+        </div>      
+    </fieldset>   
+</div>
+<p>До момента направените билети са <input type="text" id="broi"> на брой</p>
+<button id="btn-izch">Изчисли приход</button>
+<div class="suma-class"><h1 id="suma"></h1><span id="green"></span></div>
+
+<div id="dolu">
+    <h3 id="message"></h3>
+</div>
+<script>
+const buttonElement=document.getElementById('btn-izch')
+const radioPremieraEl =document.getElementById('premiera');
+const radioNormalnaEl =document.getElementById('normalna');
+const radiochas21El =document.getElementById('chas21');
+const textInputEl=document.getElementById('broi');
+const messageEl=document.getElementById('message');
+const sumaEl=document.getElementById('suma');
+const divEl=document.getElementById('dolu');
+const newDiv=document.createElement('div')
+        newDiv.classList.add('red_border')
+const greenSpan=document.getElementById('green');
+buttonElement.addEventListener('click',()=>{
+    let suma=0;
+    const broi=Number(textInputEl.value)
+greenSpan.textContent='';
+    
+    if (radioPremieraEl.checked) {
+        suma=30*broi;
+    }else if (radioNormalnaEl.checked && radiochas21El.checked) {
+        suma=20*broi;
+    }else{
+        suma=15*broi;
+    }
+    if (suma>=1500) {
+        messageEl.textContent='Стигат';
+        sumaEl.textContent='Приходите от тази прожекция ще са ';
+        greenSpan.textContent=`${suma} лв.`;
+    }else if (radioNormalnaEl.checked) {
+        messageEl.textContent='Не са задоволителни. Увеличете рекламата и продажбите!';
+        
+        divEl.appendChild(newDiv)
+        newDiv.appendChild(messageEl)
+        sumaEl.textContent=`Приходите от тази прожекция ще са ${suma} лв.`
+
+    }else{
+        messageEl.textContent='Не са задоволителни. Увеличете рекламата и продажбите! Или сменете бързо филма!'
+        divEl.appendChild(newDiv)
+        newDiv.appendChild(messageEl)
+        sumaEl.textContent=`Приходите от тази прожекция ще са ${suma} лв.`
+    }
+    
+})
+</script>
+</body>
+</html>

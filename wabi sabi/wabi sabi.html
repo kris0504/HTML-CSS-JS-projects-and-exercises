@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body {
+            background-color: #dbd9d6;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: auto;
+            width: 70%;
+        }
+        
+        header {
+            height: 60px;
+            font-size: 17px;
+        }
+        
+        header h1 {
+            float: left;
+            margin: 0;
+            margin-left: 60px;
+        }
+        
+        header p {
+            float: right;
+            margin: 0;
+            font-size: 30px;
+        }
+        
+        main {
+            margin-left: 60px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .first_big {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        
+        .second_big {
+            display: flex;
+            flex-direction: row;
+            width: 97%;
+            margin: auto;
+            margin-left: 0;
+        }
+        
+        .second_big div {
+            background-color: white;
+            text-align: center;
+            margin-right: 35px;
+            margin-top: 65px;
+        }
+        
+        .left img {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .left,
+        .right {
+            width: 501px;
+            height: 597px
+        }
+        
+        .text {
+            background-color: white;
+            text-align: left;
+            height: 54%;
+            padding: 100px 50px 0px 50px;
+        }
+        
+        .photos img {
+            width: 501px;
+            height: 100%;
+        }
+        
+        .text h1 {
+            margin: 0;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .left { 
+            background-color: #f0f0f0;
+            position: relative;
+            overflow: hidden;
+      }
+      .left p,.left h2,.left button{
+          opacity: 1;
+      }
+        .left img{
+            height: 100%;
+        }
+        .transition{
+            opacity: 0;
+        }
+        .left:hover .transition{
+            opacity: 1;
+        }
+        .transition{
+            background-color: rgba(218, 165, 32, 0.6);
+            transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>DESIGN</h1>
+        <p>☰</p>
+    </header>
+    <main>
+        <div class="first_big">
+            <div class="left">
+                <img src="./image1.jpg" alt="" style="width: 100%; height: 100%">
+                <div class="transition">
+                          <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consequatur harum quae cum vero, sapiente aspernatur eveniet doloribus explicabo maxime quisquam necessitatibus deleniti repudiandae fugit praesentium laudantium quia! Libero, esse.</p>
+                    <button>READ MORE</button>  
+                </div>
+                <h2>TITLE</h2>
+        
+            </div>
+            <div class="right">
+                <div class="text">
+                    <h1>Thai Style Home Wabi Sabi</h1>
+                    <p>The home is surrounded by a landscaped garden and there are lots of different neighbours in the area. The average home is created for a single family.</p>
+                </div>
+                <div class="photos">
+                    <img src="image2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="second_big">
+            <div class="projects">
+                <img src="image3.jpg" alt="">
+                <h1>PROJECTS</h1>
+                <p>
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="awards">
+                <img src="image4.jpg" alt="">
+                <h1>AWARDS</h1>
+                <p>
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="team">
+                <img src="image5.jpg" alt="">
+                <h1>OUR TEAM</h1>
+                <p>
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

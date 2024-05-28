@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>The town</title>
+    <style>
+        html {
+            font-size: 14px;
+        }
+        
+        header {
+            padding: 2rem;
+            width: 100%;
+            font-size: 2rem;
+            background-color: darkgreen;
+            color: white;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .block_1 {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+        }
+        
+        .block_2 {
+            background-color: orange;
+            color: white;
+            width: 30%;
+        }
+        
+        footer {
+            padding: 2rem;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+        
+        button {
+            width: 100%;
+            margin-bottom: 0.5rem;
+            background-color: orange;
+            color: white;
+            border: 0;
+            text-align: left;
+        }
+        
+        .butoni {
+            width: 42.85%;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        
+        .text {
+            margin-right: 1rem;
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 800px) {
+            main {
+                flex-direction: column;
+                display: flex;
+            }
+            .block_1 {
+                width: 100%;
+            }
+            .block_2 {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            main {
+                flex-direction: column;
+                display: flex;
+            }
+            .block_1 {
+                width: 100%;
+                flex-direction: column;
+                display: flex;
+            }
+            .butoni {
+                margin-right: 1rem;
+                width: 100%;
+            }
+            .text {
+                width: 100%;
+            }
+            .block_2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Отзивчив уеб дизайн - RWD
+    </header>
+    <main>
+        <div class="block_1">
+            <div class="butoni">
+                <button>Buton</button>
+                <button>Buton</button>
+                <button>Buton</button>
+                <button>Buton</button>
+            </div>
+            <div class="text">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p> Ut unde consequatur et laudantium omnis ex sint recusandae eos commodi molestias ab nulla quaerat eum iste tempora. Est error galisum sed similique molestias et eveniet aliquam nam magni totam qui impedit magni et reprehenderit ipsam.
+                </p>
+            </div>
+        </div>
+
+        <div class="block_2">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p> Ut unde consequatur et laudantium omnis ex sint recusandae eos commodi molestias ab nulla quaerat eum iste tempora. Est error galisum sed similique molestias et eveniet aliquam nam magni totam qui impedit magni et reprehenderit ipsam. </p>
+
+
+        </div>
+    </main>
+    <footer>
+        Lorem ipsum
+    </footer>
+</body>

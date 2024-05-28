@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body{
+            background-color: black;
+            width: 80%;
+            margin: auto;
+            color: lightblue;
+        }
+        header img{
+            width: 100%;
+        }
+        header h1{
+            color: gold;
+            margin-left: 100px;
+        }
+        main{
+            border: dotted lightblue;
+            display: flex;
+            flex-direction: column;
+        }
+        .first{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .first div{
+            width: 30%;
+            text-align: left;
+            border: solid lightblue 1px;
+            padding: 10px;
+            margin: 15px;
+
+        }
+        .first img{
+            width: 100%;
+
+        }
+        .second{
+            border: solid lightblue 1px;
+            margin: 15px;
+            text-align: center;
+        }
+        .second p{
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+        }
+        footer h1{
+            color: gold;
+            margin-right: 100px;
+            text-align: right;
+        }
+        footer img{
+            width: 100%;
+        }
+        
+    </style>
+    <style>
+        @media screen and (max-width:1000px) {  
+            body{
+                width: 100%;
+            }
+            .first div{
+                margin: 5px;
+
+            }
+            .first h1, .first p{
+                margin: 5px;
+            }
+            header h1{
+                margin-left: 10%;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .first{
+                flex-direction: column;
+
+            }
+            .first div{
+                width: 100%;
+            }
+            .first img{
+                width: 30%;
+                float: left;
+            }
+            .first h1, .first p{
+                margin: 5px;
+            }
+        }
+        @media screen and (max-width:320px) {
+            h1{
+                font-size: 10px;
+            }
+        }
+    </style>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./CLBar.jpg" alt="">
+       <h1>UEFA Champions League</h1> 
+    </header>
+    <main>
+        <section class="first">
+            <div class="trophy">
+                <img src="./trophy.jpg" alt="">
+                <h1>
+                    The Trophy
+                </h1>
+                <p>
+                    The current UEFA Champions League Trophy, which stands 73.5cm tall and weighs 8.5kg, is the sixth overall and dates back to 2006.
+                    A rule introduced in the 1968/69 season allowed the cup to become the property of any club which won the competition five times or three years in a row. That means Real Madrid CF, AFC Ajax, FC Bayern Munchen, AC Milan and, since 2005, Liverpool FC all have an original in their trophy rooms. Under new regulations, any club which wins the trophy three consecutive times or five times in total receives a special mark of recognition, with the club then starting a new cycle from zero. More...           
+                </p>
+            </div>
+            <div class="ball">
+                <img src="./ball.jpg" alt="">
+                <h1>
+                    The Ball
+                </h1>
+                <p>
+                    The adidas Starball has been synonymous with the UEFA Champions League since its introduction, with FC Bayern München's 2001 victory against Valencia CF in Milan the first final to be contested using one of the iconic balls.
+Those early balls were hand-stitched, but technology has evolved season on season since then, with the 2004 Finale ball, launched ahead of the 2004 UEFA Champions League final in Gelsenkirchen, representing a major breakthrough; the 32-panel ball adopted the Roteiro construction and, in a break with tradition, used thermal bonding technology, rather than being hand-stitched.
+Balls launched for UEFA Champions League finals were originally used in standard competition the following season - with the Starball being a different colour for most campaigns. However, a new tradition began in 2006 with the launch of the Finale Paris - the first ball that was designed specifically for the final, to be used exclusively by the eventual winners for the following season. More...
+                </p>
+            </div>
+            <div class="stadium">
+                <img src="./stadSB.jpg" alt="">
+                <h1>
+                    The Stadium
+                </h1>
+                <p>
+                    Santiago Bernabeu Real Madrid CF's famous home will stage the first UEFA Champions League final to be played on a Saturday on 22 May 2010 (20.45CET kick-off) 
+Capacity: 75,000 (net for final)
+Record attendance: 125,000 (5-4 v Athletic Club on 19.06.1954)
+Opened: 1947
+Pitch size: 106m x 66m 
+Real Madrid CF originally played their home games at the Chamartin Stadium yet, upon being elected in 1943, ambitious club president Santiago Bernabeu set about building a prestigious new, larger arena just to the west of it. More...
+                </p>    
+            </div>
+        </section>
+        <section class="second">
+            <h1>The Winners</h1>
+          <p>  2009 FC Barcelona2008 Manchester United FC2007 AC Milan2006 FC Barcelona
+2005 Liverpool2004 FC Porto2003 AC Milan2002 Real Madrid CF
+2001 FC Bayern Munchen2000 Real Madrid CF1999 Manchester United FCMore...</p>
+        </section>
+    </main>
+    <footer>
+        <h1>Don't miss the Final</h1>
+        <img src="./CLBar.jpg" alt="">
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

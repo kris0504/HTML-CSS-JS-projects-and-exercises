@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+
+<body>
+    <h1>Доставка на храна до дома</h1>
+    <h3>Обедно меню</h3>
+    <table>
+        <tr>
+            <th>Вариант</th>
+            <th>Описание</th>
+            <th>Цена</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Пилешка супа</th>
+            <th>8 лв.</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Мусака, чийзкейк</th>
+            <th>10 лв.</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Таратор, пилешка пържола с гарнитура </th>
+            <th>10 лв.</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Боб яхния,баклава</th>
+            <th>7.50 лв.</th>
+        </tr>
+    </table>
+    <h4>Изберете вариант за обедно меню:</h4>
+    <select name="menu" id="menu">
+        <option value="8">Вариант 1</option>
+        <option value="10">Вариант 2</option>
+        <option value="10">Вариант 3</option>
+        <option value="7.5">Вариант 4</option>
+
+    </select>
+    <h4>Въведете брой:</h4>
+    <input type="text" id="broi">
+    <h4>Доставка до:</h4>
+    <input type="radio" id="centur" value="2" name="dostavka">
+    <label for="centur ">Център(2 лв.)</label>
+    <input type="radio" id="kwartali" value="3" name="dostavka">
+    <label for="kwartali">Квартали(3 лв.)</label>
+    <h4>Въведете точен адрес:</h4>
+    <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+    <button id="poruchai">Поръчай</button>
+    <p id="poruchka"></p>
+    <h2 id="blagodarim"></h2>
+    <script>
+        const menuitemElement = document.getElementById("menu");
+        const broiElement = document.getElementById("broi");
+        const centurRadioElement = document.getElementById("centur");
+        const kwartaliRadioElement = document.getElementById("kwartali");
+        const buttonPoruchaiElement = document.getElementById('poruchai');
+        const poruchkaElement=document.getElementById('poruchka');
+        const blagodarimElement=document.getElementById('blagodarim');
+
+        buttonPoruchaiElement.addEventListener('click',()=>{
+            if (broiElement.value==NaN) {
+                alert('Не сте въвели брой')
+            }
+            let cena=0;
+            cena=menuitemElement.value*broiElement.value;
+            if (centurRadioElement.checked) {
+                cena=cena+2;
+            }else if(kwartaliRadioElement.checked){
+                cena=cena+3;
+
+            }
+            poruchkaElement.textContent=`Вашата поръчка е на стойност ${cena} лева и ще бъде доставена до 60 минути`
+            blagodarimElement.textContent='Благодарим Ви, че избрахте нас!'
+        })
+    </script>
+</body>
+
+</html>

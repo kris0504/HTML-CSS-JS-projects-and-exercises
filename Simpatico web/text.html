@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body{
+            background-color: #fbeec7;
+        }
+        ul{
+            list-style: none;
+            padding: 0.5rem;
+        }
+        a{
+            text-decoration:none;
+            color: #2A84E5;
+        }
+        header{
+            text-align: left;
+
+        }
+        header h1{
+
+            margin: 0;
+            font-size: 40px;
+        }
+        header h2{
+            margin: 0;
+        }
+
+        main{
+            margin: auto;
+            width: 70%;
+            background-color: white;
+            padding: 0.2rem;
+            border-radius: 10px;
+        }
+        main nav{
+            background-color: #3B8FE9;    
+           margin: 2rem;  
+           
+            
+        }
+        nav ul{
+           display: flex   ;
+            flex-direction: row;            
+            padding: 0;
+            font-size: 19px;
+            width: auto;
+        }
+        nav li{
+           
+            margin: 1rem ;
+            color: white;
+            font-size: 17px;
+            width: auto;
+            
+        }
+        nav li:hover{
+            color: black;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            margin: 0 2rem;
+        }
+        .col{
+            width: 22.5%;
+            margin-right: 0.5rem;
+        }
+        .mid_col{
+            color: #444;
+            width: 50%;
+            margin-right: 1rem;
+        }
+       .red{
+            background-color: #CC0001;
+            color: white;
+            padding: 0.7rem;
+            font-weight: bold;
+        }
+         footer p{
+             color: #777;
+             text-align: center;
+        }
+
+        img{
+            width: 100%;
+        }
+        .golqmo{
+            font-size: 20px;
+        }
+        .r{
+            color: purple;
+        }
+        .mn_golqmo{
+            font-size: 25px;
+        }
+        .jul{
+            color: gold;
+        }
+        .blue{
+            color: #2A84E5;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        </style>
+        <style>
+            @media screen and (max-width: 1000px) {
+                header{
+                    text-align: center;
+                }
+                main{
+                    margin: 0;
+                    width: 100%;
+                }
+                .third{
+                    display: none;
+                }
+                .mid_col{
+                    width: 75%;
+
+                }
+                .col{
+                    width: 25%;
+                }
+                nav li{
+                    font-size: 14px;
+                    
+                }
+                
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#">Your Website</a></h1>
+        <h2>Super slogan for super site</h2>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>PHOTOS</li>
+                <li>BLOGS</li>
+                <li>CONTACT US</li>
+                <li>HELP</li>
+            </ul>
+        </nav>
+        <section>
+            <div class="col">
+                <div>
+                    <p class="red">Categories:</p>
+                    <ul>
+                        <li><a href="#">World Politics</a></li> 
+                        <li><a href="#">Europe Sport</a></li> 
+                        <li><a href="#">Networking</a></li> 
+                        <li><a href="#">Nature - Africa</a></li>
+                        <li><a href="#">SuperCool</a></li> 
+                        <li><a href="#">Last Category</a></li>
+                        </ul>
+                </div>
+                <div>
+                    <p class="red">Archives</p>
+                    <ul>
+                        <li><a href="#">January 2007</a></li> 
+                        <li><a href="#">February 2007</a></li> 
+                        <li><a href="#">March 2007</a></li> 
+                        <li><a href="#">April 2007</a></li>
+                        <li><a href="#">May 2007</a></li> 
+                        <li><a href="#">June 2007</a></li> 
+                        <li><a href="#">July 2007</a></li> 
+                        <li><a href="#">August 2007</a></li> 
+                        <li><a href="#">September 2007</a></li>
+                        <li><a href="#">October 2007</a></li>
+                        <li><a href="#">November 2007</a></li>
+                        <li><a href="#">December 2007</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="mid_col">
+                <p class="red">License and terms of use</p>
+                <p>Simpatico is a CSS template that is free and fully standards compliant. <span class="blue">Free CSS templates</span> designed this template. This template is allowed for all uses, including commercial use, as it is released under the <span class="bold">Creative Commons Attributions 2.5 license</span> . The only stipulation to the use of this free template is that the links appearing in the footer remain intact. Beyond that, simply enjoy and have fun with it!<br /></p>
+                <p>Donec nulla. Aenean eu augue ac nisl tincidunt rutrum. Proin erat justo, pharetra eget, posuere at, malesuada et, nulla. Donec pretium nibh sed est faucibus suscipit. Nunc nisi. Nullam vehicula. In ipsum lorem, bibendum sed, consectetuer et, gravida id, erat. Ut imperdiet, leo vel condimentum faucibus, risus justo feugiat purus, vitae congue nulla diam non urna.<br /></p>
+                <img src="./pic.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec porta. Sed porttitor, tellus vitae tincidunt feugiat, sem sapien pellentesque justo, vitae pretium justo risus id nunc. Mauris elit metus, varius sit amet, rhoncus id, malesuada eget, tortor. Aenean eu augue ac nisl tincidunt rutrum. Proin erat justo, pharetra eget, posuere at, malesuada et, nulla.<br /></p>
+                <p>Donec pretium nibh sed est faucibus suscipit. Nunc nisi. Nullam vehicula. In ipsum lorem, bibendum sed, consectetuer et, gravida id, erat. Ut imperdiet, leo vel condimentum faucibus, risus justo feugiat purus, vitae congue nulla diam non urna.<br /></p>
+
+            </div>
+            <div class="col third">
+                <p class="red">Tag Cloud</p>
+                
+                <span class="golqmo r">sit</span>  <span>amet</span>
+                <span >consectetuer</span>  <span >elit</span> 
+                <span class="golqmo r">Donec</span>  <span class="jul">dui</span> 
+                <span class="jul">a</span>  <span >metus</span> 
+                <span  >non</span>  <span class="mn_golqmo">ligula</span> 
+                <span  >rhoncus</span> <span  >in</span> 
+                <span >nec</span>  <span class="jul">neque</span>
+                <span  >Sed</span>  <span class="jul">suscipit</span><span  >magna</span>  <span >vel</span> 
+                <span  class="jul">venenatis</span>  <span>vestibulum</span> 
+                <span  >convallis</span>  <span class="jul" >erat</span><span  >et</span>  <span >lobortis</span>
+                <span  >lectus</span>  <span  class="jul">nibh</span> 
+                <span class="jul">urna</span>  <span class="jul">Maecenas</span><span class="mn_golqmo s">libero</span>  <span class="jul">Duis</span> 
+                <span class="jul">lorem</span>  <span class="jul">tincidunt</span>
+                <span >bibendum</span> <span  >mi</span>
+                <span  >imperdiet</span> <span >enim</span> 
+                <span >nisl</span> <span>sem</span> 
+                <span  >velit</span> <span >Fusce</span>
+                <span  >odio</span> <span>purus</span>
+                <span  >Integer</span>  <span>elementum</span><span>Pellentesque</span>  <span   >nulla</span> 
+                <span>eros</span>  <span>ut</span> 
+                <span>diam</span>  <span>Nullam</span>
+                <span>lacus</span>  <span>mollis</span>
+                <span>quam</span>  <span>luctus</span> 
+                <span>est</span>  <span>accumsan</span>
+                <span>molestie</span>  <span>nunc</span><span>Aliquam</span>  <span>dignissim</span> 
+
+            </div>
+
+        </section>
+    </main>
+    <footer><p>Designed by Free CSS Templates, Thanks to custom web design</p></footer>
+</body>
+
+
+
+
+
+
+
+ 
